@@ -1,7 +1,7 @@
 :repository-owner: arduino-libraries
 :repository-name: Ethernet
 
-= {repository-name} Library for Arduino =
+= {repository-name} Library for Arduino (ESP32) =
 
 image:https://github.com/{repository-owner}/{repository-name}/actions/workflows/check-arduino.yml/badge.svg["Check Arduino status", link="https://github.com/{repository-owner}/{repository-name}/actions/workflows/check-arduino.yml"]
 image:https://github.com/{repository-owner}/{repository-name}/actions/workflows/compile-examples.yml/badge.svg["Compile Examples status", link="https://github.com/{repository-owner}/{repository-name}/actions/workflows/compile-examples.yml"]
@@ -11,6 +11,10 @@ With the Arduino Ethernet Shield, this library allows an Arduino board to connec
 
 For more information about this library please visit us at
 https://www.arduino.cc/en/Reference/{repository-name}
+
+== My fixes ==
+There are some basic changes from the original library to make it work for ESP32. The changes are inspired by this issue: https://github.com/arhi/EthernetSPI2/issues/3#issuecomment-1104890902
+I have not yet checked if these changes break anything. For my specific purpose with using the EthernetServer the seam to work so far.
 
 == License ==
 
